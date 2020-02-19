@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+
+table = str.maketrans({
+  'o': '0',
+  'i': '1',
+  'l': '1',
+  'z': '2',
+  'e': '3',
+  'a': '4',
+  's': '5',
+  'g': '6',
+  't': '7',
+})
+
+s = input()
+s = s.lower().translate(table)
+print(s)
+
